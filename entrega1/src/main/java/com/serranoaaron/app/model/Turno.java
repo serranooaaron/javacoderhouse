@@ -5,6 +5,7 @@ import lombok.Data;
 import org.hibernate.annotations.CreationTimestamp;
 
 @Data
+@Entity
 @Table(name = "turno")
 public class Turno {
 
@@ -12,7 +13,9 @@ public class Turno {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    Usuario usuario;
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "usuario_id")
+    private Usuario usuario;
 
     @Column(name = "nombre_turno")
     private String nombre;

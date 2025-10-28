@@ -4,20 +4,24 @@ package com.serranoaaron.app.model;
 
 import jakarta.persistence.*;
 import lombok.Data;
-import lombok.NonNull;
+
 
 @Data // LOMBOK GENERA LOS GETTER - SETTER - TOSTRING
+@Entity
 @Table(name = "admin")
 public class Administrador {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY) // Genera que sea auto-incremental.
-    private long id;
+    private Long id;
 
-    @Column(name = "User")
-    Usuario usuario = new Usuario();
-    @Column(name = "Turno")
-    Turno turno = new Turno();
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "usuario_id")
+    private Usuario usuario;
+
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "turno_id")
+    private Turno turno;
 
     @Column(name = "name_admin")
     private String nombre;

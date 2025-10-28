@@ -1,0 +1,14 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Spring Boot-Entrega1Application<entrega1>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.serranoaaron.app.Entrega1Application",
+      "projectName": "entrega1",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    }
+  ]
+}
