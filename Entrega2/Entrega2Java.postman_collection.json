@@ -1,0 +1,29 @@
+{
+	"info": {
+		"_postman_id": "fee7e900-5283-42e6-9298-3cd73d977478",
+		"name": "Entrega2Java",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36957838"
+	},
+	"item": [
+		{
+			"name": "ObtenerUsuarios",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8888/api/usuarios",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"api",
+						"usuarios"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

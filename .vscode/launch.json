@@ -2,6 +2,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Entrega2Application",
+      "request": "launch",
+      "mainClass": "com.serranoaaron.app.Entrega2Application",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "Entrega1Application",
+      "request": "launch",
+      "mainClass": "com.serranoaaron.app.Entrega1Application",
+      "projectName": ""
+    },
+    {
+      "type": "java",
       "name": "Spring Boot-Entrega1Application<entrega1>",
       "request": "launch",
       "cwd": "${workspaceFolder}",
